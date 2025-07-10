@@ -23,7 +23,7 @@ setup(
     description="A Python tool for refined Structural Variants (rSVs)",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/PeixiongYuan/pangenome_heritability",
+    url="https://github.com/StellaXiaoxuanXia/SVrefiner",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
