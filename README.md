@@ -3,8 +3,8 @@
 
 **SVrefiner** is a Python-based tool for processing structural variants (SVs) and generating refined SVs (rSVs) in VCF v4.2 format.
 It integrates sequence alignment, window scanning, and merging workflows to resolve overlapping SVs, with a focus on `DEL` (deletions) and `INS` (insertions).
-`INV` (inversions) are not processed in the current version to improve efficiency, as their occurrence in real datasets is negligible (e.g., only **0.32%** in the tomato pangenome; Zhou *et al.*, *Nature*, 2022, 606: 527–534).
-
+Complex SVs (ref* and alt* differ at the first base, or both ref and alt are longer than 1 bp) are not processed in the current version to improve efficiency, as their occurrence in real datasets is relatively small (e.g., only **2.2%** in the tomato pangenome; Zhou *et al.*, *Nature*, 2022, 606: 527–534).
+> ref: reference allele, alt: alternative allele
 ---
 
 ## Quick Start
@@ -17,7 +17,7 @@ conda create -n SVrefiner python=3.8
 conda activate SVrefiner
 
 # Clone and install SVrefiner
-git clone https://github.com/StellaXiaoxuanXia/SVrefiner.git
+git clone https://github.com/Lostmet/SVrefiner.git
 cd SVrefiner
 pip install .
 
@@ -206,6 +206,13 @@ If you encounter issues, please open an issue on GitHub or contact the authors a
 
 * [fenglostmet@tju.edu.cn](mailto:fenglostmet@tju.edu.cn)
 * [xia\_xiaoxuan@outlook.com](mailto:xia_xiaoxuan@outlook.com)
+
+---
+## Citation
+
+If you use this software, please cite:
+
+Xia X., Wu J., Gao Z. *et al.*, Modeling structural variations sequencing information to address missing heritability and enhance risk prediction (2025) *bioRxiv*. doi:[10.1101/2025.08.07.669060](https://doi.org/10.1101/2025.08.07.669060)
 
 
 
